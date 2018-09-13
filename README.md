@@ -7,9 +7,20 @@ Client accepts command line parameter to set the number of concurrent file trans
 For example, java Client 5 will transfer five files concurrently at any given time as long as there are enough files.  
 If concurrency number is not entered, it should transfer one file at a time (aka concurrency=1), by default.
 
-Once the code is working, please try with following test scenarios:
+# Files
+
+
+# Testing the program - Test Scenarios
+
 1. Create a dataset with 100 files each 10MB size and transfer with concurrency 1, 2,4 and 8 and measure throughput
 2. Create a dataset with 10 files each 1GB size and transfer with concurrency 1, 2, 4 and 8 and measure throughput
 3. Combine above two datasets in a single dataset and transfer with concurrency 1,2,4 and 8 and measure throughput
+
+# Generating Test Case 
+1. Install python
+2. From terminal run python producefile.py
+  -- To produce 10MB file, type 10
+  -- To produce 1GB file, type 1000
+Note: data will be produced inside client directory
 
 After tests are done, draw figure for each tests case in item#2 where x-axis is concurrency value and y-axis is throughput.

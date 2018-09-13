@@ -13,13 +13,13 @@ If concurrency number is not entered, it should transfer one file at a time (aka
 3. FileTransfer.java: Scans all the files inside client directory and transfers it to server based on the concurrency factor sent by Client.java
 4. FileDownload.java: when a connection is made at a port by the client for file transfer, Server accepts the connection request and sends it to FileDownload which ultimately downlods file in the connection and saves it in the server directory.
 
-# Testing the program - Test Scenarios
+# Test Cases
 
 1. Create a dataset with 100 files each 10MB size and transfer with concurrency 1, 2,4 and 8 and measure throughput
 2. Create a dataset with 10 files each 1GB size and transfer with concurrency 1, 2, 4 and 8 and measure throughput
 3. Combine above two datasets in a single dataset and transfer with concurrency 1,2,4 and 8 and measure throughput
 
-# Generating Test Case 
+# Generating Test Data 
 1. Install python
 2. From terminal run python producefile.py
 

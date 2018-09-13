@@ -1,4 +1,4 @@
-# java-socket-programming
+# Java Socket Programming Example
 
 Simple client-server socket programming in Java. This program will be used to transfer files from client to server. 
 Server will be listening on a port (say port# 5050) and Client will connect to Server and transfer files to Server. 

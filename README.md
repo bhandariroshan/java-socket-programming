@@ -37,5 +37,5 @@ After tests are done, draw figure for each tests case in item#2 where x-axis is 
  
  # Running the program
  1. Go to terminal, type `java Server`. This will run Server
- 2. Open another terminal, type `java Client`, enter concurrenct when promted, this will run client and start making file transfer to the server.
+ 2. Open another terminal, type `java Client`, enter concurrency when promted, this will run client and start making file transfer to the server.
  

@@ -27,3 +27,12 @@ If concurrency number is not entered, it should transfer one file at a time (aka
 Note: data will be produced inside client directory
 
 After tests are done, draw figure for each tests case in item#2 where x-axis is concurrency value and y-axis is throughput.
+
+# Compiling the program
+ 1. Use the command `javac -cp . -Xlint:deprecation Client.java` from terminal. It will generate Client.class file
+ 2. Use the command `javac -cp . -Xlint:deprecation Server.java` from terminal. It will generate Server.class file
+ 
+ # Running the program
+ 1. Go to terminal, type `java Server`. This will run Server
+ 2. Open another terminal, type `java Client`, enter concurrenct when promted, this will run client and start making file transfer to the server.
+ 

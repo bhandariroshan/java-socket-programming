@@ -6,6 +6,7 @@ import java.io.*;
 public class FileDownloader implements Runnable{
     Socket socket;
     String fileName;
+    String storeLocation = "./server/";
 
     public FileDownloader(Socket socket, String fileName){
         this.socket = socket;
@@ -19,7 +20,7 @@ public class FileDownloader implements Runnable{
             OutputStream out = null;
             try {
                     in = this.socket.getInputStream();
-                    out = new FileOutputStream("./server/" + fileName);
+                    out = new FileOutputStream(storeLocation + fileName);
                     byte[] bytes = new byte[16*1024];
 
                     int count;

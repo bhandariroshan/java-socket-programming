@@ -8,7 +8,10 @@ For example, java Client 5 will transfer five files concurrently at any given ti
 If concurrency number is not entered, it should transfer one file at a time (aka concurrency=1), by default.
 
 # Files
-
+1. Client.java: Client Application to make socket connection with the Server.
+2. Server.java: Server Application to accept socket connection from client. This can accept multiple connection.
+3. FileTransfer.java: Scans all the files inside client directory and transfers it to server based on the concurrency factor sent by Client.java
+4. FileDownload.java: when a connection is made at a port by the client for file transfer, Server accepts the connection request and sends it to FileDownload which ultimately downlods file in the connection and saves it in the server directory.
 
 # Testing the program - Test Scenarios
 

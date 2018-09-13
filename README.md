@@ -22,8 +22,11 @@ If concurrency number is not entered, it should transfer one file at a time (aka
 # Generating Test Case 
 1. Install python
 2. From terminal run python producefile.py
+
     -- To produce 10MB file, type 10
+
     -- To produce 1GB file, type 1000
+
 Note: data will be produced inside client directory
 
 After tests are done, draw figure for each tests case in item#2 where x-axis is concurrency value and y-axis is throughput.

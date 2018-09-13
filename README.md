@@ -36,6 +36,6 @@ After tests are done, draw figure for each tests case in item#2 where x-axis is 
  2. Use the command `javac -cp . -Xlint:deprecation Server.java` from terminal. It will generate Server.class file
  
  # Running the program
- 1. Go to terminal, type `java Server`. This will run Server
- 2. Open another terminal, type `java Client`, enter concurrency when promted, this will run client and start making file transfer to the server.
+ 1. Go to terminal, type `java Server`. This will run Server, which will accept connections from the client.
+ 2. Open another terminal, type `java Client`, enter concurrency when promted, this will run client and start transfering files to the server from the client directory.
  
